@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Quackastic Adventures - Get in touch with our duck-loving team for questions, support, or collaboration opportunities">
+    <meta name="keywords" content="duck contact, quackastic support, duck community contact, duck help">
+    <title>Contact Us - Quackastic Adventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-duck {
+            animation: float 3s ease-in-out infinite;
+        }
+        .contact-duck {
+            width: 60px;
+            height: 60px;
+            background: #fcd34d;
+            border-radius: 50%;
+            position: relative;
+            margin: 20px auto;
+        }
+        .contact-duck::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            width: 20px;
+            height: 20px;
+            background: black;
+            border-radius: 50%;
+        }
+        .contact-duck::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            width: 30px;
+            height: 20px;
+            background: #f97316;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-yellow-50">
+    <!-- Header section remains the same -->
+    <header class="bg-yellow-400 shadow-lg">
+        <!-- Header content remains the same -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-yellow-900 text-center mb-8">Contact Quackastic</h1>
+        
+        <div class="max-w-3xl mx-auto">
+            <div class="contact-duck float-duck"></div>
+            
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <form method="GET" action="/generated-website-1733165360203/submit-contact" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-yellow-900 font-medium mb-2">Your Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-yellow-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-yellow-900 font-medium mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-yellow-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    </div>
+                    
+                    <div>
+                        <label for="subject" class="block text-yellow-900 font-medium mb-2">Subject</label>
+                        <select id="subject" name="subject" class="w-full px-4 py-2 border border-yellow-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Duck Support</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                            <option value="feedback">Website Feedback</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-yellow-900 font-medium mb-2">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-yellow-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-yellow-400 text-yellow-900 font-bold py-3 px-6 rounded-md hover:bg-yellow-500 transition duration-300">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="text-3xl mb-4">📍</div>
+                    <h3 class="font-bold text-yellow-900 mb-2">Visit Us</h3>
+                    <p class="text-gray-700">123 Duck Pond Lane<br>Quackville, QK 12345</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="text-3xl mb-4">📞</div>
+                    <h3 class="font-bold text-yellow-900 mb-2">Call Us</h3>
+                    <p class="text-gray-700">+1 (555) QUACK-QUACK<br>Monday-Friday: 9am-5pm</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="text-3xl mb-4">📧</div>
+                    <h3 class="font-bold text-yellow-900 mb-2">Email Us</h3>
+                    <p class="text-gray-700">hello@quackastic.duck<br>support@quackastic.duck</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section remains the same -->
+    <footer class="bg-yellow-400 text-yellow-900">
+        <!-- Footer content remains the same -->
+    </footer>
+</body>
+</html>

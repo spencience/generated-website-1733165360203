@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Gallery - Quackastic Adventures</title>
+    <meta name="description" content="Explore our delightful collection of duck photos, artwork, and digital illustrations. From majestic Mallards to cute Rubber Ducks!">
+    <meta name="keywords" content="duck gallery, duck photos, duck art, duck illustrations, waterfowl pictures">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-duck {
+            animation: float 3s ease-in-out infinite;
+        }
+        .duck-art {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: auto;
+        }
+        .duck-body {
+            width: 120px;
+            height: 80px;
+            background: #FFD700;
+            border-radius: 50%;
+            position: absolute;
+            top: 60px;
+            left: 40px;
+        }
+        .duck-head {
+            width: 60px;
+            height: 60px;
+            background: #FFD700;
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+            left: 120px;
+        }
+        .duck-bill {
+            width: 40px;
+            height: 20px;
+            background: #FFA500;
+            position: absolute;
+            top: 60px;
+            left: 170px;
+            border-radius: 10px;
+        }
+        .duck-eye {
+            width: 10px;
+            height: 10px;
+            background: #000;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 150px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-yellow-50">
+    <!-- Header -->
+    <header class="bg-yellow-400 shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <a href="/generated-website-1733165360203/home.html" class="flex items-center space-x-2">
+                    <div class="w-12 h-12 bg-yellow-300 rounded-full float-duck relative">
+                        <div class="absolute top-4 left-3 w-4 h-4 bg-black rounded-full"></div>
+                        <div class="absolute top-6 left-8 w-6 h-4 bg-orange-500 rounded"></div>
+                    </div>
+                    <span class="text-3xl font-bold text-yellow-900">Quackastic</span>
+                </a>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="/generated-website-1733165360203/gallery.html" class="text-yellow-900 hover:text-yellow-700 font-bold">Duck Gallery</a>
+                    <a href="/generated-website-1733165360203/facts.html" class="text-yellow-900 hover:text-yellow-700">Duck Facts</a>
+                    <a href="/generated-website-1733165360203/shop.html" class="text-yellow-900 hover:text-yellow-700">Duck Shop</a>
+                    <a href="/generated-website-1733165360203/pond.html" class="text-yellow-900 hover:text-yellow-700">Virtual Pond</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-yellow-900 mb-8 text-center">Duck Gallery</h1>
+        
+        <!-- Gallery Filter -->
+        <div class="mb-8 flex justify-center space-x-4">
+            <button class="px-4 py-2 bg-yellow-400 text-yellow-900 rounded-full hover:bg-yellow-500">All Ducks</button>
+            <button class="px-4 py-2 bg-yellow-200 text-yellow-900 rounded-full hover:bg-yellow-300">Wild Ducks</button>
+            <button class="px-4 py-2 bg-yellow-200 text-yellow-900 rounded-full hover:bg-yellow-300">Pet Ducks</button>
+            <button class="px-4 py-2 bg-yellow-200 text-yellow-900 rounded-full hover:bg-yellow-300">Rubber Ducks</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Gallery Item 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="duck-art">
+                    <div class="duck-body"></div>
+                    <div class="duck-head"></div>
+                    <div class="duck-bill"></div>
+                    <div class="duck-eye"></div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-yellow-900">Mallard Magic</h3>
+                    <p class="text-gray-600">A majestic mallard showing off its colorful plumage</p>
+                    <a href="/generated-website-1733165360203/gallery/mallard.html" class="text-yellow-600 hover:text-yellow-800 mt-2 inline-block">View Details →</a>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="duck-art" style="transform: scaleX(-1)">
+                    <div class="duck-body" style="background: #FFA07A"></div>
+                    <div class="duck-head" style="background: #FFA07A"></div>
+                    <div class="duck-bill"></div>
+                    <div class="duck-eye"></div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-yellow-900">Rubber Duck Collection</h3>
+                    <p class="text-gray-600">Everyone's favorite bathroom companion</p>
+                    <a href="/generated-website-1733165360203/gallery/rubber-duck.html" class="text-yellow-600 hover:text-yellow-800 mt-2 inline-block">View Details →</a>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="duck-art">
+                    <div class="duck-body" style="background: #98FB98"></div>
+                    <div class="duck-head" style="background: #98FB98"></div>
+                    <div class="duck-bill"></div>
+                    <div class="duck-eye"></div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-yellow-900">Pond Pals</h3>
+                    <p class="text-gray-600">A group of friendly ducks enjoying their day</p>
+                    <a href="/generated-website-1733165360203/gallery/pond-pals.html" class="text-yellow-600 hover:text-yellow-800 mt-2 inline-block">View Details →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-8 flex justify-center space-x-2">
+            <a href="/generated-website-1733165360203/gallery?page=1.html" class="px-4 py-2 bg-yellow-400 text-yellow-900 rounded hover:bg-yellow-500">1</a>
+            <a href="/generated-website-1733165360203/gallery?page=2.html" class="px-4 py-2 bg-yellow-200 text-yellow-900 rounded hover:bg-yellow-300">2</a>
+            <a href="/generated-website-1733165360203/gallery?page=3.html" class="px-4 py-2 bg-yellow-200 text-yellow-900 rounded hover:bg-yellow-300">3</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-yellow-400 text-yellow-900">
+        <div class="container mx-auto px-4 py-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/generated-website-1733165360203/about.html" class="hover:text-yellow-700">About Us</a></li>
+                        <li><a href="/generated-website-1733165360203/contact.html" class="hover:text-yellow-700">Contact</a></li>
+                        <li><a href="/generated-website-1733165360203/privacy.html" class="hover:text-yellow-700">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/generated-website-1733165360203/newsletter.html" class="hover:text-yellow-700">Newsletter</a></li>
+                        <li><a href="/generated-website-1733165360203/community.html" class="hover:text-yellow-700">Duck Community</a></li>
+                        <li><a href="/generated-website-1733165360203/events.html" class="hover:text-yellow-700">Duck Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/generated-website-1733165360203/faq.html" class="hover:text-yellow-700">FAQ</a></li>
+                        <li><a href="/generated-website-1733165360203/help.html" class="hover:text-yellow-700">Help Center</a></li>
+                        <li><a href="/generated-website-1733165360203/donate.html" class="hover:text-yellow-700">Support Duck Causes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2024 Quackastic Adventures. All rights reserved. 🦆</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

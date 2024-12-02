@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Quackastic Adventures - Your premier destination for duck enthusiasts, virtual pond experiences, and duck-related entertainment">
+    <meta name="keywords" content="duck adventures, about quackastic, duck community, virtual pond, duck facts">
+    <title>About Us - Quackastic Adventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-duck {
+            animation: float 3s ease-in-out infinite;
+        }
+        .team-duck {
+            width: 100px;
+            height: 100px;
+            background: #FCD34D;
+            border-radius: 50%;
+            position: relative;
+            margin: 20px auto;
+        }
+        .team-duck::before {
+            content: '';
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            width: 15px;
+            height: 15px;
+            background: black;
+            border-radius: 50%;
+        }
+        .team-duck::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            width: 30px;
+            height: 20px;
+            background: #F97316;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-yellow-50">
+    <!-- Header and Navigation remain the same -->
+    <header class="bg-yellow-400 shadow-lg">
+        <!-- Previous header content -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-yellow-900 mb-8 text-center">About Quackastic Adventures</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-yellow-900 mb-4">Our Story</h2>
+                <p class="text-gray-700 mb-4">Founded in 2020 by a group of passionate duck enthusiasts, Quackastic Adventures started as a small virtual pond simulation and has grown into the web's premier destination for duck-related entertainment and education.</p>
+                <p class="text-gray-700">Our mission is to bring the joy and wonder of ducks to people worldwide through interactive experiences, educational content, and a vibrant community of duck lovers.</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-yellow-900 mb-4">What We Offer</h2>
+                <ul class="text-gray-700 space-y-2">
+                    <li>🦆 Interactive Virtual Pond Experience</li>
+                    <li>📚 Comprehensive Duck Facts Database</li>
+                    <li>🎮 Duck-themed Games and Activities</li>
+                    <li>🛍️ Curated Duck Merchandise</li>
+                    <li>👥 Active Duck-Loving Community</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-12">
+            <h2 class="text-2xl font-bold text-yellow-900 mb-6 text-center">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <div class="team-duck"></div>
+                    <h3 class="font-bold text-xl text-yellow-900">Waddles McQuack</h3>
+                    <p class="text-gray-600">Founder & CEO</p>
+                </div>
+                <div class="text-center">
+                    <div class="team-duck"></div>
+                    <h3 class="font-bold text-xl text-yellow-900">Daisy Duckworth</h3>
+                    <p class="text-gray-600">Head of Duck Research</p>
+                </div>
+                <div class="text-center">
+                    <div class="team-duck"></div>
+                    <h3 class="font-bold text-xl text-yellow-900">Bill Feathers</h3>
+                    <p class="text-gray-600">Community Manager</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-yellow-100 rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-yellow-900 mb-4 text-center">Join Our Flock!</h2>
+            <p class="text-gray-700 text-center mb-6">Want to stay updated with all things Quackastic? Sign up for our newsletter!</p>
+            <form action="/generated-website-1733165360203/newsletter/subscribe" method="GET" class="max-w-md mx-auto">
+                <div class="flex gap-4">
+                    <input type="email" name="email" placeholder="Enter your email" class="flex-grow px-4 py-2 rounded-lg border border-yellow-300 focus:outline-none focus:border-yellow-500">
+                    <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-bold py-2 px-6 rounded-lg">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer remains the same -->
+    <footer class="bg-yellow-400 text-yellow-900">
+        <!-- Previous footer content -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience our virtual pond where you can feed and interact with digital ducks in real-time. A peaceful escape into nature from your screen.">
+    <meta name="keywords" content="virtual pond, digital ducks, duck feeding, interactive pond, duck simulation">
+    <title>Virtual Pond - Quackastic Adventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-duck {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes ripple {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(3); opacity: 0; }
+        }
+        .pond {
+            background: linear-gradient(45deg, #4299e1, #63b3ed);
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+        .ripple {
+            position: absolute;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            animation: ripple 2s linear infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-yellow-50">
+    <!-- Header and Navigation remain the same -->
+    
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-yellow-900 mb-8 text-center">Welcome to Our Virtual Pond</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-yellow-900 mb-4">Interactive Pond Experience</h2>
+                <div class="pond w-full h-64 mb-4">
+                    <div class="ripple"></div>
+                    <div class="float-duck absolute top-1/2 left-1/4 w-12 h-12">
+                        <div class="w-12 h-12 bg-yellow-300 rounded-full relative">
+                            <div class="absolute top-4 left-3 w-4 h-4 bg-black rounded-full"></div>
+                            <div class="absolute top-6 left-8 w-6 h-4 bg-orange-500 rounded"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-4">Click anywhere on the pond to create ripples and attract ducks. Watch them swim, quack, and interact with each other in real-time!</p>
+                <div class="flex space-x-4">
+                    <button class="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-bold py-2 px-4 rounded">Feed Ducks</button>
+                    <button class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">Toggle Weather</button>
+                </div>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold text-yellow-900 mb-4">Pond Features</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Real-time duck behavior simulation</li>
+                        <li>Dynamic weather effects</li>
+                        <li>Interactive feeding system</li>
+                        <li>Duck personality varieties</li>
+                        <li>Day/night cycle</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold text-yellow-900 mb-4">Duck Stats</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center">
+                            <span class="block text-3xl font-bold text-yellow-900">12</span>
+                            <span class="text-gray-700">Current Ducks</span>
+                        </div>
+                        <div class="text-center">
+                            <span class="block text-3xl font-bold text-yellow-900">247</span>
+                            <span class="text-gray-700">Daily Visitors</span>
+                        </div>
+                        <div class="text-center">
+                            <span class="block text-3xl font-bold text-yellow-900">5,432</span>
+                            <span class="text-gray-700">Bread Pieces Fed</span>
+                        </div>
+                        <div class="text-center">
+                            <span class="block text-3xl font-bold text-yellow-900">89%</span>
+                            <span class="text-gray-700">Duck Happiness</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-yellow-900 mb-4">Pond Activities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="/generated-website-1733165360203/activities/feeding.html" class="block p-4 bg-yellow-100 rounded-lg hover:bg-yellow-200 transition">
+                    <h3 class="font-bold text-yellow-900 mb-2">Duck Feeding Guide</h3>
+                    <p class="text-gray-700">Learn the best practices for feeding our virtual ducks.</p>
+                </a>
+                <a href="/generated-website-1733165360203/activities/photos.html" class="block p-4 bg-yellow-100 rounded-lg hover:bg-yellow-200 transition">
+                    <h3 class="font-bold text-yellow-900 mb-2">Photo Opportunities</h3>
+                    <p class="text-gray-700">Capture and share moments with our photogenic ducks.</p>
+                </a>
+                <a href="/generated-website-1733165360203/activities/seasons.html" class="block p-4 bg-yellow-100 rounded-lg hover:bg-yellow-200 transition">
+                    <h3 class="font-bold text-yellow-900 mb-2">Seasonal Events</h3>
+                    <p class="text-gray-700">Experience special duck activities throughout the year.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer remains the same -->
+</body>
+</html>

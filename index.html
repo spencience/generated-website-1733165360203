@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quackastic Adventures - Your Ultimate Duck Experience</title>
+    <meta name="description" content="Discover the wonderful world of ducks at Quackastic Adventures. Explore our virtual pond, learn fascinating duck facts, and shop adorable duck merchandise.">
+    <meta name="keywords" content="ducks, virtual pond, duck facts, duck merchandise, duck community">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-duck {
+            animation: float 3s ease-in-out infinite;
+        }
+        .pond-ripple {
+            background: radial-gradient(circle at center, #60a5fa 0%, transparent 70%);
+            animation: ripple 4s infinite;
+        }
+        @keyframes ripple {
+            0% { transform: scale(1); opacity: 0.5; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-yellow-50">
+    <header class="bg-yellow-400 shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <a href="/generated-website-1733165360203/" class="flex items-center space-x-2">
+                    <div class="w-12 h-12 bg-yellow-300 rounded-full float-duck relative">
+                        <div class="absolute top-4 left-3 w-4 h-4 bg-black rounded-full"></div>
+                        <div class="absolute top-6 left-8 w-6 h-4 bg-orange-500 rounded"></div>
+                    </div>
+                    <span class="text-3xl font-bold text-yellow-900">Quackastic</span>
+                </a>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="/generated-website-1733165360203/gallery.html" class="text-yellow-900 hover:text-yellow-700">Duck Gallery</a>
+                    <a href="/generated-website-1733165360203/facts.html" class="text-yellow-900 hover:text-yellow-700">Duck Facts</a>
+                    <a href="/generated-website-1733165360203/shop.html" class="text-yellow-900 hover:text-yellow-700">Duck Shop</a>
+                    <a href="/generated-website-1733165360203/pond.html" class="text-yellow-900 hover:text-yellow-700">Virtual Pond</a>
+                </nav>
+                <button class="md:hidden text-yellow-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h1 class="text-4xl font-bold text-yellow-900 mb-6 text-center">Welcome to Quackastic Adventures</h1>
+            <p class="text-xl text-gray-700 text-center mb-8">Dive into the wonderful world of ducks!</p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+                <h2 class="text-2xl font-bold text-yellow-900 mb-4">Virtual Pond Experience</h2>
+                <div class="w-full h-32 bg-blue-200 rounded-lg relative overflow-hidden mb-4">
+                    <div class="pond-ripple absolute inset-0"></div>
+                    <div class="float-duck absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div class="w-8 h-8 bg-yellow-300 rounded-full relative">
+                            <div class="absolute top-2 left-2 w-2 h-2 bg-black rounded-full"></div>
+                            <div class="absolute top-3 left-5 w-4 h-2 bg-orange-500 rounded"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-700">Feed virtual ducks, watch them swim, and enjoy the peaceful atmosphere of our digital pond.</p>
+                <a href="/generated-website-1733165360203/pond.html" class="mt-4 inline-block text-blue-600 hover:text-blue-800">Visit Pond →</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+                <h2 class="text-2xl font-bold text-yellow-900 mb-4">Duck Facts Daily</h2>
+                <p class="text-gray-700 mb-4">Did you know ducks have waterproof feathers? Discover more fascinating facts about these amazing birds!</p>
+                <div class="bg-yellow-100 p-4 rounded-lg">
+                    <p class="text-yellow-900 font-medium">Today's Fact: Ducks can sleep with one eye open!</p>
+                </div>
+                <a href="/generated-website-1733165360203/facts.html" class="mt-4 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow">
+                <h2 class="text-2xl font-bold text-yellow-900 mb-4">Duck Shop</h2>
+                <p class="text-gray-700 mb-4">Browse our collection of duck-themed merchandise, from plushies to home decor!</p>
+                <div class="grid grid-cols-2 gap-2 mb-4">
+                    <div class="bg-yellow-200 h-20 rounded-lg"></div>
+                    <div class="bg-yellow-300 h-20 rounded-lg"></div>
+                </div>
+                <a href="/generated-website-1733165360203/shop.html" class="mt-4 inline-block text-blue-600 hover:text-blue-800">Shop Now →</a>
+            </div>
+        </div>
+
+        <section class="mt-12 bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-bold text-yellow-900 mb-4">Join Our Duck Community</h2>
+            <p class="text-gray-700 mb-6">Subscribe to our newsletter for weekly duck updates, events, and special offers!</p>
+            <form action="/generated-website-1733165360203/subscribe" method="GET" class="flex gap-4">
+                <input type="email" placeholder="Enter your email" class="flex-grow px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+                <button type="submit" class="bg-yellow-400 text-yellow-900 px-6 py-2 rounded-lg hover:bg-yellow-500 transition-colors">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-yellow-400 text-yellow-900">
+        <div class="container mx-auto px-4 py-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/generated-website-1733165360203/about.html" class="hover:text-yellow-700">About Us</a></li>
+                        <li><a href="/generated-website-1733165360203/contact.html" class="hover:text-yellow-700">Contact</a></li>
+                        <li><a href="/generated-website-1733165360203/privacy.html" class="hover:text-yellow-700">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/generated-website-1733165360203/newsletter.html" class="hover:text-yellow-700">Newsletter</a></li>
+                        <li><a href="/generated-website-1733165360203/community.html" class="hover:text-yellow-700">Duck Community</a></li>
+                        <li><a href="/generated-website-1733165360203/events.html" class="hover:text-yellow-700">Duck Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/generated-website-1733165360203/faq.html" class="hover:text-yellow-700">FAQ</a></li>
+                        <li><a href="/generated-website-1733165360203/help.html" class="hover:text-yellow-700">Help Center</a></li>
+                        <li><a href="/generated-website-1733165360203/donate.html" class="hover:text-yellow-700">Support Duck Causes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2024 Quackastic Adventures. All rights reserved. 🦆</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
